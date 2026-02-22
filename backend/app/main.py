@@ -32,3 +32,4 @@ async def health_check():
         "status": "ok",
         "message": "Portfolio API is running"
     }
+    

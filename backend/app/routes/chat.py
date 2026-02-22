@@ -19,6 +19,7 @@ class ChatResponse(BaseModel):
 
 @router.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest, db: Session = Depends(get_db)):
+    
     try:
         session_id = str(request.session_id) if request.session_id else str(uuid.uuid4())
 
@@ -46,3 +47,17 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+@router.get("/chat/history/{session_id}")
+async def get_chat_history(session_id: str, db: Session = Depends(get_db)):
+    messages = db.query(ChatMessage).filter(
+        ChatMessage.session_id == session_id
+    ).order_by(ChatMessage.created_at).all()
+
+    return {
+        "session_id": session_id,
+        "messages": [
+            {"role": msg.role, "content": msg.content}
+            for msg in messages
+        ]
+    }
