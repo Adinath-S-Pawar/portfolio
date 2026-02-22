@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from app.database import init_db
+from app.routes.chat import router as chat_router
 import os
 
 load_dotenv()
@@ -22,6 +23,8 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup():
     init_db()
+
+app.include_router(chat_router, prefix="/api")
 
 @app.get("/api/health")
 async def health_check():
