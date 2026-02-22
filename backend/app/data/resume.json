@@ -1,0 +1,83 @@
+{
+  "name": "Adinath S Pawar",
+  "title": "Aspiring Software Developer",
+  "contact": {
+    "mobile": "+91-8793608271",
+    "email": "adinath.s.pawar04@gmail.com",
+    "linkedin": "https://linkedin.com/in/adinath-pawar-a23b662ab",
+    "github": "https://github.com/Adinath-S-Pawar"
+  },
+  "objective": "Aspiring Software Developer with strong foundations in programming, problem-solving, and full-stack development. Skilled in multiple programming languages, databases, and frameworks with hands-on experience through academic and industrial projects. Seeking an opportunity to apply technical expertise to build scalable and impactful software solutions.",
+  "education": [
+    {
+      "degree": "BE Computer Engineering (Pursuing)",
+      "institution": "MES Wadia COE, SPPU",
+      "year": "Expected 2027",
+      "score": "Current SGPA: 8.86"
+    },
+    {
+      "degree": "HSC (Science)",
+      "institution": "Nowrosjee Wadia College, Maharashtra Board",
+      "year": "2023",
+      "score": "80.33%"
+    },
+    {
+      "degree": "SSC",
+      "institution": "Nagarvala School, Maharashtra Board",
+      "year": "2021",
+      "score": "91.80%"
+    }
+  ],
+  "skills": {
+    "languages": ["C", "C++", "Java", "Python", "JavaScript"],
+    "frontend": ["React.js", "Next.js", "HTML5", "CSS3", "JavaScript ES6", "Tailwind CSS", "Java Swing", "Redux"],
+    "backend": ["Node.js", "Express.js", "Spring Boot", "REST APIs", "JWT Authentication", "bcrypt.js"],
+    "databases": ["Oracle PL/SQL", "MySQL", "MS SQL Server", "MongoDB", "Mongoose", "JDBC"],
+    "tools": ["VS Code", "IntelliJ IDEA", "Postman", "Git/GitHub", "Apache Tomcat", "Render"],
+    "os": ["Windows NT", "Linux Distributions"],
+    "testing": ["Vitest", "React Testing Library", "Playwright"]
+  },
+  "projects": [
+    {
+      "name": "DocuMate – AI-Powered Webpage Content Summarizer",
+      "tech": ["Java", "Spring Boot", "JavaScript", "HTML", "CSS", "Chrome Extension APIs", "Google Gemini API"],
+      "description": "Chrome extension to extract, summarize, and explain webpage content using Google Gemini AI API.",
+      "highlights": [
+        "Developed Chrome extension to extract, summarize, and explain webpage content using Google Gemini AI API",
+        "Implemented custom side panel UI through Chrome Extension APIs displaying structured summaries, explanations, and reading suggestions",
+        "Gained experience in browser extension architecture, full-stack AI integration, and advanced language models"
+      ]
+    },
+    {
+      "name": "Securix – Secure Real-Time Chat Application",
+      "tech": ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Tailwind CSS"],
+      "description": "Full-stack real-time chat application with JWT authentication, instant messaging, and MongoDB persistence.",
+      "highlights": [
+        "Built full-stack real-time chat application with JWT authentication, instant messaging, and MongoDB persistence",
+        "Designed RESTful APIs for user/message management; deployed on Render with responsive Tailwind CSS UI",
+        "Gained experience in full-stack architecture, WebSocket real-time systems, and JWT security implementation"
+      ]
+    },
+    {
+      "name": "Customised Virtual File System (CVFS)",
+      "tech": ["C Programming", "OS Internals"],
+      "description": "Linux-like filesystem with command-line shell supporting core file operations.",
+      "highlights": [
+        "Implemented Linux-like filesystem with command-line shell supporting core operations: open, read, write, lseek, delete",
+        "Designed internal data structures including inode tables and file descriptors for complete file system simulation",
+        "Gained experience in operating system internals, file system architecture, and low-level C memory management"
+      ]
+    },
+    {
+      "name": "Real-time Kanban Board – WebSocket Task Management System",
+      "tech": ["React.js", "Node.js", "Express.js", "Socket.IO", "CSS Modules", "Vitest", "Playwright"],
+      "description": "Real-time collaborative Kanban board with drag-and-drop task management and multi-client synchronization.",
+      "highlights": [
+        "Built real-time collaborative Kanban board with drag-and-drop task management and instant multi-client synchronization using Socket.IO",
+        "Architected WebSocket event system ensuring consistent state across concurrent users",
+        "Developed comprehensive test coverage with Vitest/React Testing Library for unit/integration tests and Playwright for E2E validation"
+      ]
+    }
+  ],
+  "methodologies": ["Agile", "Unit Testing", "Integration Testing", "E2E Testing"]
+}
