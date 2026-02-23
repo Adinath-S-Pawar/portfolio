@@ -1,0 +1,163 @@
+.experience-section {
+    --color-primary: #6c63ff;
+    --color-secondary: #00d4aa;
+    --color-text: #e8e8f0;
+
+    background-color: #0a0a0f;
+    color: var(--color-text);
+    padding: 5rem 1rem;
+}
+
+.experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.experience-section .heading-underline {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    margin: 0 auto 4rem auto;
+    border-radius: 2px;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* The vertical line running through the center */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgba(108, 99, 255, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 2px;
+}
+
+/* Individual timeline items */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+/* Dots on the timeline */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: var(--color-primary);
+    border: 4px solid #0a0a0f;
+    top: 32px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+.timeline-item.right .timeline-dot {
+    left: -10px;
+}
+
+/* Card Styling */
+.timeline-content {
+    background-color: #1a1a2e;
+    padding: 2rem;
+    border-radius: 12px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* subtle border */
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    border-color: rgba(108, 99, 255, 0.4);
+    /* glow border on hover */
+    box-shadow: 0 10px 30px -10px rgba(108, 99, 255, 0.3);
+    /* hover glow effect */
+}
+
+/* Typography & Internal Elements */
+.year-badge {
+    display: inline-block;
+    background-color: rgba(108, 99, 255, 0.15);
+    color: var(--color-primary);
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+.degree-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+}
+
+.institution-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    margin-bottom: 0.8rem;
+}
+
+.score-text {
+    font-size: 1rem;
+    color: #a0a0b0;
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness: Single Column Layout */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+        /* Move the line to the left edge */
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+        left: 10px;
+        /* Align timeline dots with the left vertical line */
+        right: auto;
+    }
+}
