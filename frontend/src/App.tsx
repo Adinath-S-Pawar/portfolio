@@ -19,6 +19,9 @@ function App() {
         <Experience />
         <Contact />
       </main>
+      <footer className="footer">
+        Built by Adinath Pawar with React + FastAPI
+      </footer>
       <ChatWidget />
     </div>
   );
