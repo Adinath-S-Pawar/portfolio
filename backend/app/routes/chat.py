@@ -46,6 +46,8 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
         return ChatResponse(reply=reply, session_id=session_id)
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
     
 @router.get("/chat/history/{session_id}")
